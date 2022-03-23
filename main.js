@@ -7,3 +7,7 @@ function changecookie(){
 function deletecookie(){
   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 };
+function listcookie(){
+  var result = document.cookie;
+  document.getElementById("list").innerHTML=result;
+};
