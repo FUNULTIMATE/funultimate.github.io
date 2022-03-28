@@ -1,14 +1,9 @@
-function savecookie(){
-  document.cookie = "username=John Doe; expires=Thu, 18 Dec 2100 12:00:00 UTC; path=/";
+document.write("your not supposed to be here >:(");
+setTimeout(msg2, 1000);
+function msg2(){
+document.write("go back to cookie clicker or I will have to close this tab!");
+setTimeout(msg3, 1000);  
 };
-function changecookie(){
- var txt = prompt("insert new cookie value");
- document.cookie = "username=" + txt + "; expires=Thu, 18 Dec 2100 12:00:00 UTC; path=/";
-};
-function deletecookie(){
-  document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-};
-function listcookie(){
-  var result = document.cookie;
-  document.getElementById("list").innerHTML=result;
+function msg3(){
+  close();
 };
